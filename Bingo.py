@@ -54,10 +54,10 @@ if st.button("generate"):
             put_multiline_text(img,event_list[i][j],(100+i*320,430+j*380),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,0),2)
     st.image(img)
 
-with open("Bingo_image.png", "rb") as f:
-    st.download_button(
+
+st.download_button(
         label="📥 Télécharger l'image",
-        data=f,
+        data=img,
         file_name="Bingo_image.png",
         mime="image/png"
     )
