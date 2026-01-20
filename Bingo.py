@@ -29,7 +29,7 @@ st.set_page_config(
 st.title("Bingo")
 img = cv2.imread("Bingo_image.png")
 if st.button("generate"):
-    events = random.choices(event_types, k=9)
+    events = random.sample(event_types, k=9)
     event_list = [events[i:i+3] for i in range(0, len(events), 3)]
     for i in range(3):
         for j in range(3):
