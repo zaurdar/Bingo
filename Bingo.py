@@ -32,6 +32,8 @@ event_types = ["mich fait pipi \ndans un endroit \ninapte a recevoir \ndu pipi",
                "la chambre adopte \nun neo et le \nmurge",
                "Arnaud parle \nde Gazelle",
                "leopold raconte \ncomment il a casse \nun micro onde \nau Bar CP",
+               "Sam redrague une \nlouna (encore)",
+               "baptiste et leo \nfont un bras \nde zob"
                ]
 def put_multiline_text(img, text, org, font, font_scale, color, thickness=1, line_type=cv2.LINE_AA, line_spacing=1.2):
     x, y = org
