@@ -21,7 +21,16 @@ event_types = ["mich fait pipi \ndans un endroit \ninapte a recevoir \ndu pipi",
                "Arnaud choppe \nléa robinet (encore)",
                "Arnaud se fait \nprendre patate \npar des fucam",
                "flash choppe \nquelqu'un",
-               "falsh choppe vincent"]
+               "falsh choppe \nvincent",
+               "flash se leve \nà 8h pour aller skier",
+               "plus de deux \nhommes dorment en \nmeme temps sur les \nenormes pecs de samuel",
+               "leopold a \nde la neige sur son zob",
+               "Mus2 se fait \nappeler par \njeff en panique",
+               "organisation d un \nconcours de taille de zob",
+               "quelqu'un compare \nle zob de mus2 à un \nobjet contendant",
+               "mich perd/casse \nses lunettes",
+               "Mus2 prend une \ndouche avec au \nmoins une autre \npersonne",
+               ]
 def put_multiline_text(img, text, org, font, font_scale, color, thickness=1, line_type=cv2.LINE_AA, line_spacing=1.2):
     x, y = org
     for line in text.split("\n"):
