@@ -13,7 +13,8 @@ event_types = ["mich fait pipi \ndans un endroit \ninapte a recevoir \ndu pipi",
                "Arnaud raconte \nsa blague et \nelle est pas \ndrole au final",
                "Arnaud et Mich \ndorment en cuillère",
                "Mus2 et Mich \ndorment en cuillère",
-               "Arnaud et Mus2 \ndorment en cuillère",]
+               "Arnaud et Mus2 \ndorment en cuillère",
+               "vincent choppe \nau ski"]
 def put_multiline_text(img, text, org, font, font_scale, color, thickness=1, line_type=cv2.LINE_AA, line_spacing=1.2):
     x, y = org
     for line in text.split("\n"):
