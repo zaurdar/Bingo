@@ -55,9 +55,14 @@ if st.button("generate"):
     st.image(img)
 
 
-st.download_button(
+
+ok, buffer = cv2.imencode(".png", img)   # ou ".jpg"
+if ok:
+    st.download_button(
         label="📥 Télécharger l'image",
-        data=img,
-        file_name="Bingo_image.png",
+        data=buffer.tobytes(),
+        file_name="bingo.png",
         mime="image/png"
     )
+else:
+    st.error("Impossible d'encoder l'image.")
