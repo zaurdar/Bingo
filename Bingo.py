@@ -8,7 +8,12 @@ event_types = ["mich fait pipi \ndans un endroit \ninapte a recevoir \ndu pipi",
                "leopold emballe \nune mono de ski",
                "vincent apprend \na sam a jouer a lol",
                "Arnaud obtiens \nla palme de l'autisme \nplanetaire suite a \nun vote du peuple",
-               "Tout le monde \ndans l'appart \na part  vincent \nest tout nu"]
+               "Tout le monde \ndans l'appart \na part  vincent \nest tout nu",
+               "Arnaud raconte \nsa blague et \npersonne s'en \nsouviens",
+               "Arnaud raconte \nsa blague et \nelle est pas \ndrole au final",
+               "Arnaud et Mich \ndorment en cuillère",
+               "Mus2 et Mich \ndorment en cuillère",
+               "Arnaud et Mus2 \ndorment en cuillère",]
 def put_multiline_text(img, text, org, font, font_scale, color, thickness=1, line_type=cv2.LINE_AA, line_spacing=1.2):
     x, y = org
     for line in text.split("\n"):
