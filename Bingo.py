@@ -11,9 +11,9 @@ event_types = ["mich fait pipi \ndans un endroit \ninapte a recevoir \ndu pipi",
                "Tout le monde \ndans l'appart \na part  vincent \nest tout nu",
                "Arnaud raconte \nsa blague et \npersonne s'en \nsouviens",
                "Arnaud raconte \nsa blague et \nelle est pas \ndrole au final",
-               "Arnaud et Mich \ndorment en cuillère",
-               "Mus2 et Mich \ndorment en cuillère",
-               "Arnaud et Mus2 \ndorment en cuillère",
+               "Arnaud et Mich \ndorment en cuillere",
+               "Mus2 et Mich \ndorment en cuillere",
+               "Arnaud et Mus2 \ndorment en cuillere",
                "vincent choppe \nau ski"]
 def put_multiline_text(img, text, org, font, font_scale, color, thickness=1, line_type=cv2.LINE_AA, line_spacing=1.2):
     x, y = org
@@ -29,9 +29,9 @@ st.set_page_config(
 st.title("Bingo")
 img = cv2.imread("Bingo_image.png")
 if st.button("generate"):
-    events = random.choices(event_types, k=16)
-    event_list = [events[i:i+4] for i in range(0, len(events), 4)]
-    for i in range(4):
-        for j in range(4):
-            put_multiline_text(img,event_list[i][j],(100+i*320,430+j*380),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,0),2)
+    events = random.choices(event_types, k=9)
+    event_list = [events[i:i+3] for i in range(0, len(events), 3)]
+    for i in range(3):
+        for j in range(3):
+            put_multiline_text(img,event_list[i][j],(100+i*450,430+j*380),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,0),2)
     st.image(img)
