@@ -36,9 +36,9 @@ st.set_page_config(
 st.title("Bingo")
 img = cv2.imread("Bingo.png")
 if st.button("generate"):
-    events = random.sample(event_types, k=9)
-    event_list = [events[i:i+3] for i in range(0, len(events), 3)]
-    for i in range(3):
-        for j in range(3):
+    events = random.sample(event_types, k=16)
+    event_list = [events[i:i+4] for i in range(0, len(events), 4)]
+    for i in range(4):
+        for j in range(4):
             put_multiline_text(img,event_list[i][j],(100+i*320,430+j*380),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,0),2)
     st.image(img)
